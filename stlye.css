@@ -164,9 +164,9 @@ nav ul li a:hover::after{
     display: block;   
 }
 
-.tab-contents ul{
+.tab-contents ul li {
     line-height: 30px;
-    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 /* ------------------services------------------ */
