@@ -25,19 +25,11 @@ body{
     padding: 10px 10%;
 }
 
-nav{
+nav{ 
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-}
-
-.logo{
-    display: none;
-    width: 140px;
-    
-}
+    align-items:center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;}
 
 nav ul li{
     display: inline-block;
@@ -113,12 +105,19 @@ nav ul li a:hover::after{
 }
 
 .sub-title{
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 600;
     color: #fff;
 }
 
+.about-col-2>p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
 .tab-title{
+    font-size: 22px;
+    font-weight: 600;
     display: flex;
     margin: 20px 0 40px;
 }
@@ -153,7 +152,8 @@ nav ul li a:hover::after{
 
 .tab-contents ul li span{
     color: #ff004f;
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .tab-contents{
@@ -296,7 +296,7 @@ transition: height 0.5s;
     flex-basis: 60%;
 }
 .contact-left p{
-    margin: 30px;
+    margin: 30px 30px 30px 0px;
 }
 .contact-left p i{
     color: #ff004f;
