@@ -9,8 +9,12 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #080808;
-    color: white;
+    /* background: #080808; */
+    /* background: #fff1eb;
+background: radial-gradient(circle, #fff1eb 0%, #ace0f9 100%);
+    color: white; */
+    background: rgb(40,217,238);
+background: radial-gradient(circle, rgba(40,217,238,1) 0%, rgba(216,226,226,1) 50%, rgba(93,215,121,1) 100%);
 }
 
 #header {
