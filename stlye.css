@@ -23,7 +23,10 @@ background: radial-gradient(circle, rgba(40,217,238,1) 0%, rgba(216,226,226,1) 5
     background-image: url(images/bg\ photo.jpg);
     background-size: cover ;
     background-position: left;
+    flex-direction: column;
 }
+
+
 
 .container{
     padding: 10px 10%;
@@ -229,6 +232,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    height: 77%;
 }
 .work img{
     width: 100%;
@@ -332,7 +336,7 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    background: #cbe9e6;
     padding: 15px;
     margin: 15px 0;
     color: #fff;
@@ -350,12 +354,12 @@ form .btn2{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #262626;
+    background: #63d089;
     font-weight: 300;
     margin-top: 20px;
 }
 .copyright i{
-    color: #ff004f;
+    color: #95c5d1;
 }
 
 /* --------------------------css for small screen------------- */
@@ -427,4 +431,62 @@ nav .fa-solid{
     color: #61b752;
     margin-top: -40px;
     display: block;
+}
+
+            /* DArk mode and normal mode button */
+
+.button{
+    background-color: #fff;
+    width: 4em;
+    height: 2em;
+    border-radius: 10em;
+    padding: 0 0.5em;
+    box-shadow: inset 0 8px 60px rgba(52, 51, 51, 0.2),
+                inset 0 8px 8px rgba(109, 106, 106, 0.3),
+                inset 0 -4px 4px rgba(100, 98, 98, 0.2);
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    margin-left: 90%;
+    align-items: center;
+}
+
+.btn__indicator{
+    background-color: #ddd2d2;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 8px 40px rgba(34, 33, 33, 0.215);
+    display: flex;
+    align-items: center;
+    margin-left: -5px ;   
+}
+
+.btn_icon {
+    position: relative;
+    margin-left: 3px;
+    color: #a6a82fd2;
+    size: 1rem;
+}
+
+
+                        /* DARKMODE */
+
+body.darkmode{
+    background-color: var(--dark-color);
+}
+
+.darkmode .btn{
+    box-shadow: inset 0 8px 60px rgba(52, 51, 51, 0.2),
+                inset 0 8px 8px rgba(109, 106, 106, 0.3),
+                inset 0 -4px 4px rgba(100, 98, 98, 0.2);
+}
+
+.darkmode .btn__indicator{
+    transform: translateX(2em);
+}
+
+.darkmode .btn__icon{
+    color: var(--dark-icon-color);
 }
