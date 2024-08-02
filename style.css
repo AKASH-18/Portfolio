@@ -230,6 +230,8 @@ nav ul li a:hover::after{
  }
 
  .work{
+    display: flex;
+    align-items: center;
     border-radius: 10px;
     position: relative;
     overflow: hidden;

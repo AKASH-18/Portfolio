@@ -1,185 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/ae9eede5f5.js" crossorigin="anonymous"></script>
-
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ae9eede5f5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div id="header">
-        <div class="button">
-            <div class="btn__indicator">
-            <div class="btn__icon-container">
-        <i class="btn_icon fa-solid"></i>
-            </div>
-            </div>
+      <div class="button">
+        <div class="btn__indicator">
+          <div class="btn__icon-container">
+            <i class="btn_icon fa-solid"></i>
+          </div>
         </div>
-    <div class="container">
+      </div>
+      <div class="container">
         <nav>
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>WEB DEVELOPER</p>
-            <h1>Hi, I'm <span>Akash</span> </h1>
+          <p>WEB DEVELOPER</p>
+          <h1>Hi, I'm <span>Akash</span></h1>
         </div>
-    </div>
+      </div>
     </div>
 
     <!-- ------------------about-------------------- -->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user1.jpg" alt="image" >
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About me</h1>
-                    <p>Greetings! I'm Akash Bisht, a Computer Science and Engineering graduate. My fascination with technology led me to the world of web development, where I enjoy shaping digital experiences. Beyond coding, I find solace in capturing life's intricacies through photography and refining reality with Photoshop. An avid traveler, I seek inspiration from diverse cultures and landscapes. Join me in my journey of blending innovation, art, and exploration. </p>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user1.jpg" alt="image" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Greetings! I'm Akash Bisht, a Computer Science and Engineering
+              graduate. My fascination with technology led me to the world of
+              web development, where I enjoy shaping digital experiences. Beyond
+              coding, I find solace in capturing life's intricacies through
+              photography and refining reality with Photoshop. An avid traveler,
+              I seek inspiration from diverse cultures and landscapes. Join me
+              in my journey of blending innovation, art, and exploration.
+            </p>
 
-                    <div class="tab-title">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab ('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab ('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills" >
-                        <ul>
-                            <li><span>HTML</span></li>
-                            <li><span>CSS</span></li>
-                            <li><span>JAVASCRIPT</span></li>
-                            <li><span>ADOBE PHOTOSHOP</span></li>
-                            <li><span>BOOTSTRAP</span></li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>                            
-                            <li><span>BSNL(ALTTC Ghaziabad), BSNL Unit (2018)</span><br>Networking and Cyber Security</li>
-                            <li><span>Insergo Technologies,Dehradun (2019)</span><br>Web development</li>
-                            <li><span>Slog Solution Pvt. Ltd, Dehradun (2020)</span><br>20 Days Python Traning</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Bachelor of Technology </span><br>(2018 – 2022)<br>Govind Ballabh Pant Institute of Engineering and Technology, Pauri
-                                Garhwal</li>
-                            <li><span>Intermediate</span><br>Kendriya Vidhyalaya Pithoragarh</li>
-                            <li><span>High School</span><br>Kendriya Vidhyalaya Pithoragarh</li>
-                        </ul>
-                    </div>
-
-                </div>
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab ('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab ('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>HTML</span></li>
+                <li><span>CSS</span></li>
+                <li><span>JAVASCRIPT</span></li>
+                <li><span>ADOBE PHOTOSHOP</span></li>
+                <li><span>BOOTSTRAP</span></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>BSNL(ALTTC Ghaziabad), BSNL Unit (2018)</span
+                  ><br />Networking and Cyber Security
+                </li>
+                <li>
+                  <span>Insergo Technologies,Dehradun (2019)</span><br />Web
+                  development
+                </li>
+                <li>
+                  <span>Slog Solution Pvt. Ltd, Dehradun (2020)</span><br />20
+                  Days Python Traning
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Bachelor of Technology </span><br />(2018 – 2022)<br />Govind
+                  Ballabh Pant Institute of Engineering and Technology, Pauri
+                  Garhwal
+                </li>
+                <li>
+                  <span>Intermediate</span><br />Kendriya Vidhyalaya Pithoragarh
+                </li>
+                <li>
+                  <span>High School</span><br />Kendriya Vidhyalaya Pithoragarh
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-<!-- -----------------------------services------------------ -->
-<div id="services">
-    <div class="container">
+    <!-- -----------------------------services------------------ -->
+    <div id="services">
+      <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>this mu services hget askdfhasv askdf aksdhfie adskvhaisernasd kasdhhfie amdshie akdshif asdmhfiwe f</p>
-                <a href="#">Learn more</a>     
-            </div>
-            <div>
-                <i class="fa-regular fa-crop-simple"></i>
-                <h2>UI/UX</h2>
-                <p>this mu services hget askdfhasv askdf aksdhfie adskvhaisernasd kasdhhfie amdshie akdshif asdmhfiwe f</p>
-                <a href="#">Learn more</a>     
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store"></i>
-                <h2>PHOTOSHOP</h2>
-                <p>this mu services hget askdfhasv askdf aksdhfie adskvhaisernasd kasdhhfie amdshie akdshif asdmhfiwe f</p>
-                <a href="#">Learn more</a>     
-            </div>
-        </div>    
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              this mu services hget askdfhasv askdf aksdhfie adskvhaisernasd
+              kasdhhfie amdshie akdshif asdmhfiwe f
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-regular fa-crop-simple"></i>
+            <h2>UI/UX</h2>
+            <p>
+              this mu services hget askdfhasv askdf aksdhfie adskvhaisernasd
+              kasdhhfie amdshie akdshif asdmhfiwe f
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>PHOTOSHOP</h2>
+            <p>
+              this mu services hget askdfhasv askdf aksdhfie adskvhaisernasd
+              kasdhhfie amdshie akdshif asdmhfiwe f
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-<!-- -------------------portfolio---------------- -->
-<div id="portfolio">
-    <div class="container">
+    <!-- -------------------portfolio---------------- -->
+    <div id="portfolio">
+      <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
-            <div class="work">
-                <img src="images/work-1.png" alt="">
-                <div class="layers">
-                    <h3>Social Media App</h3>
-                    <p>the app connects you to the talenteed people around the world .
-                        download it form playstore.
-                    </p>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
-                </div>
+          <div class="work">
+            <img src="images/Github Profile Finder.png" alt="" />
+            <div class="layers">
+              <h3>Github Profile Finder</h3>
+              <p>
+                The app let you search github user profile by its name and link
+                to its bio.
+              </p>
+              <a href="https://akash-18.github.io/Github-Profile-Finder/"
+                ><i class="fa-solid fa-link"></i
+              ></a>
             </div>
-            <div class="work">
-                <img src="images/To do app.png" alt="">
-                <div class="layers">
-                    <h3>To Do List App</h3>
-                    <p>the app helps u to list your important task and help you to keep track of your task completed or not.
-                        download it form playstore.
-                    </p>
-                    <a href="https://todo-list-f7.netlify.app/"><aria-label><i class="fa-solid fa-link"></i></aria-label></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="images/To do app.png" alt="" />
+            <div class="layers">
+              <h3>To Do List App</h3>
+              <p>
+                the app helps u to list your important task and help you to keep
+                track of your task completed or not. download it form playstore.
+              </p>
+              <a href="https://todo-list-f7.netlify.app/"
+                ><aria-label><i class="fa-solid fa-link"></i></aria-label
+              ></a>
             </div>
-            <div class="work">
-                <img src="images/work-3.png" alt="">
-                <div class="layers">
-                    <h3>Online SHopping</h3>
-                    <p>the app connects you to the talenteed people around the world .
-                        download it form playstore.
-                    </p>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layers">
+              <h3>Online SHopping</h3>
+              <p>
+                the app connects you to the talenteed people around the world .
+                download it form playstore.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
             </div>
+          </div>
         </div>
         <a href="#" class="btn">See more</a>
+      </div>
     </div>
-</div>
-<!-- ------------------------Contact-------------------- -->
-<div id="contact">
-    <div class="container">
+    <!-- ------------------------Contact-------------------- -->
+    <div id="contact">
+      <div class="container">
         <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-sharp fa-solid fa-paper-plane"></i><span>akashakashbisht@gmail.com</span></p>
-                <p><i class="fa-solid fa-phone-volume"></i><span>9012311495</span></p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/profile.php?id=100006001080578"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://twitter.com/akkuubisht"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/akash_bisht__/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="www.linkedin.com/in/akash-bisht-69385418a"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-                <a href="#" download class="btn btn2">Download CV</a>
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-sharp fa-solid fa-paper-plane"></i
+              ><span>akashakashbisht@gmail.com</span>
+            </p>
+            <p>
+              <i class="fa-solid fa-phone-volume"></i><span>9012311495</span>
+            </p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100006001080578"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/akkuubisht"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/akash_bisht__/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="www.linkedin.com/in/akash-bisht-69385418a"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your name" required>
-                    <input type="email" name="Email" placeholder="Your email" required>
-                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button> 
-                </form>
-                <span id="msg"></span>
-            </div>
+            <a href="#" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
+      </div>
+      <div class="copyright">
+        <p><i class="fa-solid fa-copyright"></i> Copyright Akash.</p>
+      </div>
     </div>
-    <div class="copyright">
-        <p><i class="fa-solid fa-copyright"></i> Copyright Akash. </p>
-    </div>
-</div>
-    
-<script src="main.js"></script>
 
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
