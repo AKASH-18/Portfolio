@@ -101,3 +101,47 @@ button.addEventListener('click', () => {
     }, 500)
 
 });
+
+
+
+
+const canvas = document.getElementById("waveCanvas");
+        const ctx = canvas.getContext("2d");
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        
+        let waves = [
+            { amplitude: 80, wavelength: 2000, color: "rgba(235, 80, 196, 1)", phase: 0 },
+            { amplitude: 60, wavelength: 1500, color: "rgba(187, 236, 240, 1)", phase: Math.PI / 2 },
+            { amplitude: 50, wavelength: 2000, color: "rgba(75, 90, 204,1 )", phase: Math.PI },
+            { amplitude: 50, wavelength: 800, color: "rgba(113, 208, 240, 1)", phase: 3 * Math.PI / 2 }
+        ];
+
+        let offset = 0;
+        const waveSpeed = 0.005; // Improved smooth motion
+        
+        function drawWave(wave, time) {
+            ctx.beginPath();
+            for (let x = 0; x <= canvas.width; x++) {
+                let y = canvas.height / 2 + Math.sin((x / wave.wavelength) * Math.PI * 2 + time * waveSpeed + wave.phase) * wave.amplitude;
+                ctx.lineTo(x, y);
+            }
+            ctx.strokeStyle = wave.color;
+            ctx.lineWidth = 60;
+            ctx.shadowColor = wave.color;
+            ctx.shadowBlur = 50;
+            ctx.stroke();
+        }
+        
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            offset += 1;
+            waves.forEach(wave => drawWave(wave, offset));
+            requestAnimationFrame(animate);
+        }
+        animate();
+
+        window.addEventListener("resize", () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
