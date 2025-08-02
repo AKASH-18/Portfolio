@@ -215,6 +215,9 @@ nav ul li a:hover::after {
   transform: translateY(-10px);
 }
 
+
+
+
 /* ----------------portfolio------------- */
 
 #portfolio {
@@ -242,6 +245,7 @@ nav ul li a:hover::after {
   border-radius: 10px;
   display: block;
   transition: transform 0.5s;
+  object-fit: fill;
 }
 
 .layers {
@@ -399,7 +403,6 @@ nav .fa-solid {
 }
 
 @media only screen and (max-width: 600px) {
- 
   .header-text {
     margin-top: 100%;
     font-size: 16px;
